@@ -10,6 +10,7 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
+import Collider from '../../components/Collider';
 import { title, html } from './index.md';
 
 class HomePage extends React.Component {
@@ -21,8 +22,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Collider />
       </Layout>
     );
   }

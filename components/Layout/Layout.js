@@ -26,18 +26,8 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout" ref="root">
-        <div className="mdl-layout__inner-container">
-          <Header>
-            <span className="mdl-layout-title">React Static Boilerplate</span>
-            <div className="mdl-layout-spacer"></div>
-            <Navigation />
-          </Header>
-          <main className="mdl-layout__content">
-            <div className={s.content} {...this.props} />
-            <Footer />
-          </main>
-        </div>
+      <div ref="root">
+        <div className={s.content} {...this.props} />
       </div>
     );
   }
